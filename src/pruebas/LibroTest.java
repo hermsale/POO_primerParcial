@@ -19,14 +19,19 @@ public class LibroTest {
             // this.mostrarEditorial();
     }
 
-    public String CrearLibro(){
-        Libro libroHPDos = new Libro("Harry Potter y la camara secreta", "J.K. Rowling", "Bloomsbury", 1998, 2, 22.99);
-        return libroHPDos.toString();
+    // creo un metodo crearLibro de tipo Libro. que guardara el objeto Libro
+    public Libro crearLibro() {
+        return new Libro("Harry Potter y la cámara secreta", "J.K. Rowling", "Bloomsbury", 1998, 2, 22.99);
     }
 
-    // se muestra el libro creado
+    // se muestra el libro creado. utilizo el metodo getNombreLibro().equals para verificar que haya un titulo
     public void mostrarLibro(){
-        System.out.println(CrearLibro());      
+        if(crearLibro().getNombreLibro().equals("")){
+            System.out.println("No hay libros");
+        }else{
+            System.out.println(crearLibro());   
+        }
+
     }
 
      // creamos un autor /////////////////////////////////////////////////////////
@@ -58,10 +63,10 @@ public class LibroTest {
         System.out.println(crearEditorial());
     }
 
-// metodo para agregarEjemplares
+    Libro libroHPUno = new Libro("Harry Potter y la piedra filosofal", "J.K. Rowling", "Bloomsbury", 1997, 2, 20.99);
+    // metodo para agregarEjemplares
      public void agregarEjemplares() {
         // Crear un nuevo libro
-        Libro libroHPUno = new Libro("Harry Potter y la piedra filosofal", "J.K. Rowling", "Bloomsbury", 1997, 2, 20.99);
         
         // Mostrar el estado inicial del libro
         System.out.println("Estado inicial del libro:");

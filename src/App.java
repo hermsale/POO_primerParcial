@@ -9,7 +9,7 @@ public class App {
          
         LibroTest pruebaLibro = new LibroTest();
         // se crea un libro
-        pruebaLibro.CrearLibro();
+        pruebaLibro.crearLibro();
         // se imprime el libro
         pruebaLibro.mostrarLibro();
         // se imprime los datos del autor
