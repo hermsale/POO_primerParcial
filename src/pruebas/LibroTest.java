@@ -20,6 +20,7 @@ public class LibroTest {
     // guardamos lo que haya en crearLibro, en un objeto de tipo Libro. Para ser utilizado mas adelante
     Libro libroHP = crearLibro(); 
 
+
     // se muestra el libro creado. utilizo el metodo getNombreLibro().equals para verificar que haya un titulo
     public void mostrarLibro(){
         if(libroHP.getNombreLibro().equals("")){
