@@ -56,7 +56,8 @@ public class Libro {
         return cantidadEjemplares;
     }
     public void setCantidadEjemplares(int cantidadEjemplares) {
-        this.cantidadEjemplares = cantidadEjemplares;
+        // actualizo la cantidad de ejemplares (si se ingresa 2 se suma +2 si ingreso -1 se resta -1 a la cantidad)
+        this.cantidadEjemplares += cantidadEjemplares;
     }
     public double getCosto() {
         return costo;

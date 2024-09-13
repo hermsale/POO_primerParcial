@@ -25,5 +25,7 @@ public class App {
     );
 
         System.out.println(libroHPDos.toString());
+        libroHPDos.setCantidadEjemplares(-1);
+        System.out.println(libroHPDos.toString());
     }
 }
