@@ -8,7 +8,7 @@ public class App {
 
          
         LibroTest pruebaLibro = new LibroTest();
-        // se crea un libro
+        // se crea un libro utilizando el metodo crearLibro
         pruebaLibro.crearLibro();
         // se imprime el libro
         pruebaLibro.mostrarLibro();
@@ -18,9 +18,7 @@ public class App {
         pruebaLibro.mostrarEditorial();
 
         // agrego tres ejemplares al libro ya cargado
-        // libroHPUno.setCantidadEjemplares(3);
-        // System.out.println(libroHPUno.toString());
-        pruebaLibro.agregarEjemplares();
+        pruebaLibro.agregarEjemplares(3);
 
     }
 }
