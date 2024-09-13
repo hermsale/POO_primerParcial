@@ -69,7 +69,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "nombre del libro: " + getNombreLibro() + ", autor: " + getAutor() + ", editorial: " + getEditorial()
+        return "Datos del libro \n Nombre: " + getNombreLibro() + ", autor: " + getAutor() + ", editorial: " + getEditorial()
                 + ", anio Publicacion: " + getAnioPublicacion() + ", cantidad de ejemplares: " + getCantidadEjemplares() + ", costo: "
                 + getCosto()+" u$d";
     }

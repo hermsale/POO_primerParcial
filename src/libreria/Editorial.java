@@ -64,5 +64,14 @@ public class Editorial {
         this.cuit = cuit;
     }
 
-
+    // this.nombreEditorial = nombreEditorial;
+    // this.telefonoEditorial = telefonoEditorial;
+    // this.direccionEditorial = direccionEditorial;
+    // this.localidad = localidad;
+    // this.email = email;
+    // this.cuit = cuit;
+    @Override
+    public String toString() {
+        return "Datos Editorial\n Nombre Editorial: " + getNombreEditorial() + ", Telefono: " + getTelefonoEditorial() + ", Direccion: " + getDireccionEditorial()+ ", Localidad: " + getLocalidad() + ", Email: "+getEmail()+", CUIT: "+getCuit();
+    }
 }

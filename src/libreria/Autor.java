@@ -53,5 +53,14 @@ public class Autor {
         this.email = email;
     }
 
-
+    // this.nombre = nombre;
+    // this.apellido = apellido;
+    // this.fechaNacimiento = fechaNacimiento;
+    // this.sexo = sexo;
+    // this.email = email;
+    @Override
+    public String toString() {
+        return "Autor del libro \n nombre: " + getNombre() + ", apellido: " + getApellido() + ", fecha de nacimiento: " + getFechaNacimiento()
+                + ", sexo: " + getSexo() + ", email: "+getEmail();
+    }
 }
