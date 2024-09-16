@@ -69,10 +69,18 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Datos del libro \n Nombre: " + getNombreLibro() + ", autor: " + getAutor() + ", editorial: " + getEditorial()
-                + ", anio Publicacion: " + getAnioPublicacion() + ", cantidad de ejemplares: " + getCantidadEjemplares() + ", costo: "
-                + getCosto()+" u$d";
+        return "--------------------------------------------------------\n" +
+               "| Datos del libro                                      |\n" +
+               "--------------------------------------------------------\n" +
+               "| Nombre: " + getNombreLibro() + "\n" +
+               "| Autor: " + getAutor() + "\n" +
+               "| Editorial: " + getEditorial() + "\n" +
+               "| Anio de Publicacion: " + getAnioPublicacion() + "\n" +
+               "| Cantidad de Ejemplares: " + getCantidadEjemplares() + "\n" +
+               "| Costo: " + getCosto() + " u$d\n" +
+               "--------------------------------------------------------";
     }
+    
 
     
 }

@@ -60,7 +60,14 @@ public class Autor {
     // this.email = email;
     @Override
     public String toString() {
-        return "Autor del libro \n nombre: " + getNombre() + ", apellido: " + getApellido() + ", fecha de nacimiento: " + getFechaNacimiento()
-                + ", sexo: " + getSexo() + ", email: "+getEmail();
+        return "Ficha del Autor del Libro\n" +
+               "-------------------------\n" +
+               " * Nombre: " + getNombre() + "\n" +
+               " * Apellido: " + getApellido() + "\n" +
+               " * Fecha de Nacimiento: " + getFechaNacimiento() + "\n" +
+               " * Sexo: " + getSexo() + "\n" +
+               " * Email: " + getEmail() + "\n" +
+               "-------------------------";
     }
+    
 }

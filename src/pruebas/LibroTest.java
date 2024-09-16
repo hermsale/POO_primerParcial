@@ -6,10 +6,8 @@ import libreria.Libro;
 
 public class LibroTest {
 
-    // constructor 
-    public LibroTest(){
-
-    }
+    // tambien podría crear un libro de esta manera, pero no estaria utilizando el metodo para crear libros
+    // Libro libroHPUno = new Libro("Harry Potter y la piedra filosofal", "J.K. Rowling", "Bloomsbury", 1997, 2, 20.99);
 
     // creo un metodo crearLibro de tipo Libro. que guardara el objeto Libro
     public Libro crearLibro() {
@@ -26,14 +24,14 @@ public class LibroTest {
         if(libroHP.getNombreLibro().equals("")){
             System.out.println("No hay libros");
         }else{
-            System.out.println(crearLibro());   
+            System.out.println(libroHP.toString());   // si se creo correctamente el libro, muestru su informacion
         }
 
     }
 
      // creamos un autor /////////////////////////////////////////////////////////
      public String crearAutor(){
-         Autor autorUno = new Autor("Joanne", "Rowling", "31/07/1965", "Femenino", "j.k.rowling@example.com");
+         Autor autorUno = new Autor("Joanne", "Rowling", "31/07/1965", "Femenino", "j.k.rowling@gmail.com");
         return autorUno.toString();
      }
 
@@ -47,11 +45,11 @@ public class LibroTest {
     public String crearEditorial(){
         Editorial editorialUno = new Editorial(
         "Bloomsbury Publishing",       // Nombre de la editorial
-        "+44 20 7631 5600",            // Teléfono (ficticio)
-        "50 Bedford Square",           // Dirección (real)
+        "+44 20 7631 5600",            // Teléfono
+        "50 Bedford Square",           // Dirección
         "Londres",                     // Localidad
-        "info@bloomsbury.com",         // Email (ficticio)
-        "12345678901"                  // CUIT (inventado)
+        "info@bloomsbury.com",         // Email
+        "12345678901"                  // CUIT
     );
     return editorialUno.toString();
     }
@@ -60,25 +58,13 @@ public class LibroTest {
         System.out.println(crearEditorial());
     }
 
-    // tambien podría crear un libro de esta manera, pero no estaria utilizando el metodo para crear libros
-    // Libro libroHPUno = new Libro("Harry Potter y la piedra filosofal", "J.K. Rowling", "Bloomsbury", 1997, 2, 20.99);
-
     // metodo para agregarEjemplares
      public void agregarEjemplares(int cantidad) {
-        
-        // Mostrar el estado inicial del libro
-        System.out.println("Estado inicial del libro:");
-        // System.out.println(libroHPUno.toString());
-        System.out.println(libroHP.toString());
-
-        // Agregar 2 ejemplares (la suma de los ejemplares la realizo en la clase Libro)
-        // libroHPUno.setCantidadEjemplares(cantidad);
+       
+        // Agregar ejemplares (la suma de los ejemplares la realizo en la clase Libro)
         libroHP.setCantidadEjemplares(cantidad);
         
         // Mostrar el estado del libro despues de agregar ejemplares
-        System.out.println("Despues de agregar ejemplares:");
-        System.out.println(libroHP.toString());
-        // System.out.println(libroHPUno.toString());
-
+        System.out.println("Se agregaron: "+cantidad+" ejemplares");
     }
 }

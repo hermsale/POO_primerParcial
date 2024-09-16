@@ -72,6 +72,15 @@ public class Editorial {
     // this.cuit = cuit;
     @Override
     public String toString() {
-        return "Datos Editorial\n Nombre Editorial: " + getNombreEditorial() + ", Telefono: " + getTelefonoEditorial() + ", Direccion: " + getDireccionEditorial()+ ", Localidad: " + getLocalidad() + ", Email: "+getEmail()+", CUIT: "+getCuit();
+        return "Ficha de la Editorial\n" +
+               "-------------------------\n" +
+               " * Nombre: " + getNombreEditorial() + "\n" +
+               " * Telefono: " + getTelefonoEditorial() + "\n" +
+               " * Direccion: " + getDireccionEditorial() + "\n" +
+               " * Localidad: " + getLocalidad() + "\n" +
+               " * Email: " + getEmail() + "\n" +
+               " * CUIT: " + getCuit() + "\n" +
+               "-------------------------";
     }
+    
 }

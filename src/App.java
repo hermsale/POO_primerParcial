@@ -9,16 +9,14 @@ public class App {
          
         LibroTest pruebaLibro = new LibroTest();
         // se crea un libro utilizando el metodo crearLibro
+        pruebaLibro.mostrarAutor();
+        pruebaLibro.mostrarEditorial();
         pruebaLibro.crearLibro();
+
         // se imprime el libro
         pruebaLibro.mostrarLibro();
-        // se imprime los datos del autor
-        pruebaLibro.mostrarAutor();
-        // se imprime los datos de la editorial
-        pruebaLibro.mostrarEditorial();
-
         // agrego tres ejemplares al libro ya cargado
         pruebaLibro.agregarEjemplares(3);
-
+        pruebaLibro.mostrarLibro();
     }
 }
