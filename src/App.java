@@ -1,12 +1,14 @@
 // import libreria.Autor;
 // import libreria.Editorial;
 // import libreria.Libro;
+import java.util.Scanner;
+
 import pruebas.LibroTest;
 
 public class App {
     public static void main(String[] args) throws Exception {
-
-         
+        Scanner sc = new Scanner(System.in);
+        int cantidad = 0;
         LibroTest pruebaLibro = new LibroTest();
         // se crea un libro utilizando el metodo crearLibro
         pruebaLibro.mostrarAutor();
@@ -15,8 +17,13 @@ public class App {
 
         // se imprime el libro
         pruebaLibro.mostrarLibro();
-        // agrego tres ejemplares al libro ya cargado
-        pruebaLibro.agregarEjemplares(3);
+
+        System.out.println("Cuanto ejemplares desea agregar?");
+        cantidad = sc.nextInt();
+       
+        pruebaLibro.agregarEjemplares(cantidad);
         pruebaLibro.mostrarLibro();
+
+        sc.close();
     }
 }
