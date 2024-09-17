@@ -18,7 +18,7 @@ public class App {
         // se imprime el libro
         pruebaLibro.mostrarLibro();
 
-        System.out.println("Cuanto ejemplares desea agregar?");
+        System.out.print("¿Cuanto ejemplares desea agregar?: ");
         cantidad = sc.nextInt();
        
         pruebaLibro.agregarEjemplares(cantidad);
