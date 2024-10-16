@@ -30,9 +30,9 @@ public class LibroTest {
     }
 
      // creamos un autor /////////////////////////////////////////////////////////
-     public String crearAutor(){
+     public Autor crearAutor(){
          Autor autorUno = new Autor("Joanne", "Rowling", "31/07/1965", "Femenino", "j.k.rowling@gmail.com");
-        return autorUno.toString();
+        return autorUno;
      }
 
      public void mostrarAutor(){
@@ -42,7 +42,7 @@ public class LibroTest {
     
 
       // creamos una editorial ////////////////////////////////////////////////
-    public String crearEditorial(){
+    public Editorial crearEditorial(){
         Editorial editorialUno = new Editorial(
         "Bloomsbury Publishing",       // Nombre de la editorial
         "+44 20 7631 5600",            // Teléfono
@@ -51,7 +51,7 @@ public class LibroTest {
         "info@bloomsbury.com",         // Email
         "12345678901"                  // CUIT
     );
-    return editorialUno.toString();
+    return editorialUno;
     }
 
     public void mostrarEditorial(){
